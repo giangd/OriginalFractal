@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+Colors c;
+
 void setup() {
 	size(500,500);
 	fractal(width/2,height/2,300);
@@ -13,15 +14,11 @@ void fractal(int x, int y, float len) {
 	} else {
 		fractal(x,y,len/1.2);
 	}
-=======
-Colors c;
+}
 
 public void setup() {
 	size(500, 500);
-  c = new Colors(true);
-	// myFractal(width/2,height/2,500);
-  frameRate(20);
-	
+  c = new Colors(true);	
 }  
 
 public void draw() {
@@ -135,5 +132,4 @@ class Colors {
   color getDifferentColor() {
     return color(rgb[1].getVal(), rgb[2].getVal(), rgb[0].getVal());
   }
->>>>>>> 3108a3a191a4d955f81378eec9e600d17ccacd9f
 }
